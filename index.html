@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main{
+            height: 100vh;
+            width: 100;
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;
+            flex-direction: column;
+        }
+        section{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height:300px ;
+            position: relative;
+            background-color: aliceblue;
+            margin: 0 20px;
+            border: 2px solid red;
+            animation: animate 5s ease-in-out .25s infinite alternate ;
+            /* transition: all ease-in-out 2s; */
+        }
+        /* .box:hover{
+            transform: scale(2);
+            background-color: blue;
+        } */
+        @keyframes animate{
+            0%{
+                background-color: red;
+                border: 2px dotted green;
+                transform: rotate(30deg);
+            }
+            25%{
+                background-color: rgb(65, 66, 6);
+                border: 20px dotted rgb(90, 13, 153);
+                transform: rotate(60deg); 
+            }
+            50%{
+                background-color: rgb(20, 126, 112);
+                border: 2px dotted rgb(61, 5, 33);
+                transform: rotate(90deg);
+            }
+            75%{
+                background-color: rgb(162, 214, 42);
+                border: 2px dotted rgb(163, 30, 86);
+                transform: rotate(120deg);
+            }
+            25%{
+                background-color: rgb(65, 66, 6);
+                border: 20px dotted rgb(90, 13, 153);
+                transform: rotate(60deg); 
+            }
+            100%{
+                background-color: rgb(14, 25, 131);
+                border: 30px dotted rgb(14, 117, 158);
+                transform: rotate(270deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>This is an intro to Animation</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima est adipisci itaque quod explicabo atque dolore minus voluptatibus placeat iusto?</p>
+        <section>
+            <section class="box"></section>
+            <section class="box"></section>
+       </section>
+    </main>
+</body>
+</html>
